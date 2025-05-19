@@ -2,12 +2,23 @@
   "name": "robo-bacbo",
   "version": "1.0.0",
   "description": "",
-  "main": "bot_bacbo.js",
+  "main": "runners/runAll.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bot_bacbo.js"
+    "start": "node runners/runAll.js",
+    "sequencia": "node ../runners/runSequencia.js",
+    "apos-empate": "node runners/runAposEmpate.js",
+    "alternancia": "node runners/runAlternancia.js",
+    "proporcao": "node runners/runProporcao.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["bacbo", "casino", "bot", "telegram"],
+  "keywords": [
+    "bacbo",
+    "casino",
+    "bot",
+    "telegram",
+    "estrategia",
+    "apostas"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -16,5 +27,8 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "puppeteer": "^24.8.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
